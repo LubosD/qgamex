@@ -1,0 +1,399 @@
+<ui version="4.0" >
+ <class>MainForm</class>
+ <widget class="QDialog" name="MainForm" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>904</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>QGameX - Linux gamer's utility</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="1" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Generic options</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <layout class="QGridLayout" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <item row="7" column="0" colspan="4" >
+          <widget class="QTextEdit" name="textXinit" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="verticalScrollBarPolicy" >
+            <enum>Qt::ScrollBarAlwaysOn</enum>
+           </property>
+           <property name="lineWrapMode" >
+            <enum>QTextEdit::NoWrap</enum>
+           </property>
+           <property name="acceptRichText" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2" >
+          <widget class="QCheckBox" name="checkKeymap" >
+           <property name="text" >
+            <string>Switch keyboard map to</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="4" >
+          <widget class="QCheckBox" name="checkXinit" >
+           <property name="text" >
+            <string>Execute following commands before running the game</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2" >
+          <widget class="QCheckBox" name="checkScreen" >
+           <property name="text" >
+            <string>Use a specific screen number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2" >
+          <widget class="QCheckBox" name="checkXConf" >
+           <property name="text" >
+            <string>Use a special X11 config file</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="3" >
+          <widget class="QLineEdit" name="lineName" />
+         </item>
+         <item row="4" column="2" >
+          <widget class="QLineEdit" name="lineXConf" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="text" >
+            <string>xorg.conf</string>
+           </property>
+           <property name="readOnly" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="4" >
+          <widget class="QCheckBox" name="checkXmodmap" >
+           <property name="text" >
+            <string>Apply Xmodmap settings, if present</string>
+           </property>
+           <property name="checked" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3" >
+          <widget class="QToolButton" name="toolXConf" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="text" >
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2" >
+          <widget class="QLineEdit" name="lineKeymap" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="text" >
+            <string>us</string>
+           </property>
+           <property name="alignment" >
+            <set>Qt::AlignHCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" >
+          <widget class="QLabel" name="label_7" >
+           <property name="text" >
+            <string>Profile name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2" colspan="2" >
+          <widget class="QSpinBox" name="spinScreen" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2" >
+          <widget class="QRadioButton" name="radioRunType1" >
+           <property name="text" >
+            <string>Run in a new X session</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2" colspan="2" >
+          <widget class="QRadioButton" name="radioRunType2" >
+           <property name="text" >
+            <string>Run in the existing X session</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <attribute name="title" >
+       <string>nVidia options</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <layout class="QGridLayout" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <item row="4" column="0" >
+          <widget class="QLabel" name="label_4" >
+           <property name="text" >
+            <string>Sync to vblank</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2" >
+          <widget class="QComboBox" name="comboAniso" />
+         </item>
+         <item row="3" column="0" >
+          <widget class="QLabel" name="label_3" >
+           <property name="text" >
+            <string>Aniso mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2" >
+          <widget class="QComboBox" name="comboDoom3" >
+           <property name="toolTip" >
+            <string>Enable the Doom3 mode when running
+a Doom 3-based game on a SLI/MultiGPU
+system for a significant performance gain
+(driver will switch to the AFR mode).</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2" >
+          <widget class="QLineEdit" name="lineSync" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="2" >
+          <widget class="QLabel" name="label_5" >
+           <property name="text" >
+            <string>Doom3 SLI/MultiGPU mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" colspan="2" >
+          <widget class="QComboBox" name="comboVblank" />
+         </item>
+         <item row="2" column="0" >
+          <widget class="QLabel" name="label_2" >
+           <property name="text" >
+            <string>FSAA mode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="2" >
+          <widget class="QComboBox" name="comboFSAA" />
+         </item>
+         <item row="5" column="0" colspan="2" >
+          <widget class="QCheckBox" name="checkSync" >
+           <property name="toolTip" >
+            <string>Enabling this option makes sense
+only if sync to vblank is enabled.</string>
+           </property>
+           <property name="text" >
+            <string>Vblank sync to display device</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" >
+          <widget class="QLabel" name="label_8" >
+           <property name="text" >
+            <string>&lt;b>GPU type&lt;/b></string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2" >
+          <widget class="QComboBox" name="comboGpuType" >
+           <property name="toolTip" >
+            <string>Choose your GPU type to
+enable appropriate options.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3" >
+          <widget class="Line" name="line" >
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item rowspan="4" row="7" column="0" colspan="3" >
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Profile</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="0" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" colspan="2" >
+         <widget class="QListWidget" name="listProfiles" />
+        </item>
+        <item row="2" column="0" >
+         <widget class="QPushButton" name="pushSave" >
+          <property name="text" >
+           <string>Save</string>
+          </property>
+          <property name="default" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" >
+         <widget class="QPushButton" name="pushDelete" >
+          <property name="text" >
+           <string>Delete</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QPushButton" name="pushNew" >
+          <property name="text" >
+           <string>Reset options</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QPushButton" name="pushLoad" >
+          <property name="text" >
+           <string>Load</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>To use profile, execute&lt;br>PROFILE="profileName" qgamex game-command [game-args...]</string>
+       </property>
+       <property name="textFormat" >
+        <enum>Qt::RichText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>211</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushAbout" >
+       <property name="text" >
+        <string>About</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,19 @@
+* version 1.1.1
+  - keyboard map is now switched back when the game exits
+
+* version 1.1.0
+  - support for new FSAA modes
+  - program displays only the options available for the selected GPU
+  - program can run a game in the existing X session too
+
+* version 1.0.3
+  - a running X server is no longer necessary for running a game
+
+* version 1.0.2
+  - increased verbosity
+
+* version 1.0.1
+  - added the vblank sync to device option
+
+* version 1.0
+  - initial release
