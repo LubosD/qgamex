@@ -135,6 +135,7 @@ void runGame(int argc,char** argv,const QMap<QString,QString>& params)
 		}
 	}
 	
+	cmd.clear();
 	for(int i=1;i<argc;i++)
 	{
 		QString arg = argv[i];
