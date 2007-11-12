@@ -146,7 +146,11 @@ void runGame(int argc,char** argv,const QMap<QString,QString>& params)
 	{
 		QString arg = argv[i];
 		arg.replace('"', "\\\"");
-		cmd += QString("\"%1\" ").arg(arg);
+		
+		if(arg.contains(' '))
+			cmd += QString("\"%1\" ").arg(arg);
+		else
+			cmd += QString("%1 ").arg(arg);
 	}
 	
 	cmd += '\n';
