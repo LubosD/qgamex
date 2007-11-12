@@ -50,7 +50,13 @@ int main(int argc, char** argv)
 		
 		if(profile && !loadProfile(profile,params))
 		{
-			QMessageBox::critical(0, "Fatal error", "Unable to load specified profile!");
+			if(getenv("DISPLAY") != 0)
+			{
+				QApplication app(argc, argv);
+				QMessageBox::critical(0, "Fatal error", "Unable to load specified profile!");
+			}
+			else
+				std::cerr << "Fatal error: Unable to load specified profile!\n";
 			return 1;
 		}
 		else
