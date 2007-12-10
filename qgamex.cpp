@@ -63,6 +63,8 @@ int main(int argc, char** argv)
 		{
 			dumpProfile(params);
 			runGame(argc,argv,params);
+			std::cerr << "\n***Please note that if you've received the \"user not authorized to run the X server\" error message, "
+					"modify /etc/X11/Xwrapper.config to contain allowed_users=anybody and try again.";
 			return 0;
 		}
 	}
